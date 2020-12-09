@@ -1,0 +1,41 @@
+.Die {
+  font-size: 10em;
+  padding: 0.25em;
+  color: slateblue;
+  
+}
+
+.Die-Rolling {
+  animation-name: wobble ;
+  animation-duration: 1s;
+}
+
+@keyframes wobble {
+  0% {
+    transform: translateX(0);
+  }
+
+  15% {
+    transform: translateX(-25%) rotateZ(-5deg);
+  }
+
+  30% {
+    transform: translateX(20%) rotateZ(3deg);
+  }
+
+  45% {
+    transform: translateX(-15%) rotateZ(-3deg);
+  }
+
+  60% {
+    transform: translateX(10%) rotateZ(2deg);
+  }
+
+  75% {
+    transform: translateX(-3%) rotateZ(-1deg);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
